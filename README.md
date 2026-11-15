@@ -14,7 +14,7 @@ automation support (cron / systemd).
 
 ```bash
 # Clone the repo
-git clone https://github.com/dottmp/restico.git
+git clone git@github.com:dottmp/restico.git
 cd restico
 
 # Install the restico command
