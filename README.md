@@ -1,4 +1,4 @@
-# restico
+# Restico
 
 CLI wrapper around [restic](https://restic.net/) with logging, ntfy notifications, and
 automation support (cron / systemd).
