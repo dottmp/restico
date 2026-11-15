@@ -1,0 +1,10 @@
+[Unit]
+Description=Restico backup service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/restico backup --tag scheduled
+WorkingDirectory=%h
+Nice=10
+IOSchedulingClass=idle
+TimeoutStartSec=60min

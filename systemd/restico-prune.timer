@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly restico prune
+
+[Timer]
+OnCalendar=*-*-1 04:30:00
+Persistent=true
+RandomizedDelaySec=900
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily restico backup
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+Persistent=true
+RandomizedDelaySec=900
+
+[Install]
+WantedBy=default.target

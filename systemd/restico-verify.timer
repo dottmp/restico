@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly restico verify
+
+[Timer]
+OnCalendar=Sun 05:30:00
+Persistent=true
+RandomizedDelaySec=900
+
+[Install]
+WantedBy=default.target

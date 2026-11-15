@@ -1,0 +1,10 @@
+[Unit]
+Description=Restico verify service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/restico verify
+WorkingDirectory=%h
+Nice=10
+IOSchedulingClass=idle
+TimeoutStartSec=60min

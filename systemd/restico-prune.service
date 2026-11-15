@@ -1,0 +1,10 @@
+[Unit]
+Description=Restico prune service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/restico forget
+WorkingDirectory=%h
+Nice=10
+IOSchedulingClass=idle
+TimeoutStartSec=60min
